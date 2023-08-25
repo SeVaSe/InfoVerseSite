@@ -22,5 +22,5 @@ from ifisite.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('infoversesite/', include('ifisite.urls'))
+    path('', include('ifisite.urls'))
 ]

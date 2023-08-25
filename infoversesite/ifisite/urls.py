@@ -4,5 +4,7 @@ from .views import *
 
 
 urlpatterns = [
-    path('', index)
+    path('', main_page),  # 127.0.0.1:8000/
+    path('commands/', commands)  # 127.0.0.1:8000/commands/
+
 ]
