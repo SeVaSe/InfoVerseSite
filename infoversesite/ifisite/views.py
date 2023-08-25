@@ -11,11 +11,11 @@ def main_page(request):
 
 
 def commands(request):
-    return HttpResponse("Команды")
+    return rcp.render_commands(request)
 
 
 def feedback(request):
-    return HttpResponse('Обратная связь')
+    return rfp.render_feedback(request)
 
 
 def payment(request):
