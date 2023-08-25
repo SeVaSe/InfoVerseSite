@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def main_page(request):
-    return HttpResponse("Главная страница")
+    return render(request, 'ifisite/main_page.html')
 
 
 def commands(request):
