@@ -1,9 +1,16 @@
 /* Определение стилей для класса .btn */
 .my-div {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #13117d;
+    padding: 10px;
+    border: 5px  #3f3e96;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 300px;
+    box-shadow: 0 0 15px rgb(100, 0, 0);
     /* Другие стили для div */
+}
+
+.back-ground {
+    background: linear-gradient(70deg, #06011a, #01031a);
 }
