@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
+class Command(models.Model):
+    command = models.CharField(max_length=10000000)
+    descr = models.CharField(max_length=10000000)
+
+    def __str__(self):
+        return self.command  # Или какое-то другое представление объекта
+
+
