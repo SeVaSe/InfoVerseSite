@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from ifisite.models import Command
 
 def render_main(request):
-    return render(request, 'ifisite/main_page.html')
+    commands = Command.objects.all()  # Получаем все объекты из модели Command
+    print(commands)
+    return render(request, 'ifisite/main_page.html', {'commands': commands})

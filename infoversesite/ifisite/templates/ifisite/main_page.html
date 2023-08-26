@@ -11,7 +11,7 @@
         <div class="logo-all">
             <img src="{% static 'ifisite/images/logo.png' %}" width="20%" />
             <h1>InfoVerse</h1>
-        </div>
+        </div>В
         <nav class="navigation-all">
               <a href="{% url 'main_p' %}" class="a_personal-all">Главная</a>
               <a href="{% url 'commands_p' %}">Наш продукт</a>
@@ -21,6 +21,11 @@
         </nav>
     </header>
     <div class="divider-all"></div>
+
+{% for command in commands %}
+    <p style="color: red">{{ command.command }}</p>
+    <p style="color: red">{{ command.descr }}</p>
+{% endfor %}
 
 
 
