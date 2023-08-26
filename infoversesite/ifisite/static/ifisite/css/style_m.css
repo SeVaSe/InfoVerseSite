@@ -1,0 +1,66 @@
+/* Стили для body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для контейнера списка */
+.article-list-container {
+  margin-left: 140px;
+  position: relative; /* Добавляем позиционирование для псевдоэлемента */
+  max-width: 180px;
+  max-height: = 400px
+  padding: 0 10px; /* Отступы для линий */
+}
+
+/* Добавляем линии с обеих сторон контейнера */
+.article-list-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+
+/* Линия справа */
+.article-list-container::after {
+  right: 0;
+  height: 100vh; /* Растягиваем линию до конца страницы */
+}
+
+
+
+/* Стили для списка */
+.article-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* Стили для ссылок внутри списка */
+.article-list a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+/* Стили для ссылок при наведении */
+.article-list a:hover {
+  color: lightblue; /* Голубой цвет при наведении */
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightblue;;
+}
