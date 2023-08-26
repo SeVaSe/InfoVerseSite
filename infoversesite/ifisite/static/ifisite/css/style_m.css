@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* гриды */
+.container {
+    display: grid;
+    grid-template-areas: 'sidebar content';
+    grid-template-columns: 250px 1fr;
+    margin-left: 140px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+
+.content {
+    border: 1px solid white;
+    grid-area: content;
+}
+
+
+
+
+/* Стили для контейнера списка */
+.sidebar {
+
+  position: relative;
+  max-width: 180px;
+}
+
+/* Добавляем линии с обеих сторон контейнера */
+.sidebar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+
+/* Линия справа */
+.sidebar::after {
+  right: 0;
+}
+
+
+/* Стили для списка */
+.article-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* Стили для элементов списка */
+.article-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/* Стили для ссылок внутри списка */
+.article-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+/* Стили для ссылок при наведении */
+.article-list a:hover {
+  color: lightblue;
+}
