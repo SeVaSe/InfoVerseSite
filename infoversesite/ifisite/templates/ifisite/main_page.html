@@ -1,14 +1,32 @@
 {% load static %}
-<html class="background-all">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Главная страница</title>
     <link type="text/css" href="{% static 'ifisite/css/styles.css' %}" rel="stylesheet"/>
     <link type="text/css" href="{% static 'ifisite/css/style_k.css' %}" rel="stylesheet"/>
 </head>
-<body>
-    <div class="t-k">
-        <p>fdssfds</p>
-    </div>
+<body class="background-all">
+    <header>
+        <div class="logo-all">
+            <img src="{% static 'ifisite/images/logo.png' %}" width="20%" />
+            <h1>InfoVerse</h1>
+
+        </div>
+        <nav class="navigation-all">
+              <a href="{% url 'main_p' %}" class="a_personal-all">Главная</a>
+              <a href="{% url 'commands_p' %}">Наш продукт</a>
+              <a href="{% url 'payment_p' %}">Магазин</a>
+              <a href="{% url 'feedback_p' %}">Обратная связь</a>
+              <a href="{% url 'feedback_p' %}">FAQ</a>
+        </nav>
+
+
+    </header>
+
+    <div class="divider-all"></div>
+
+
+
 </body>
 </html>

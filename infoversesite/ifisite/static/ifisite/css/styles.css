@@ -1,16 +1,144 @@
-/* Определение стилей для класса .btn */
-.my-div {
-    background-color: #13117d;
-    padding: 10px;
-    border: 5px  #3f3e96;
-    border-radius: 20px;
-    margin-top: 60px;
-    margin-left: 60px;
-    width: 300px;
-    box-shadow: 0 0 15px rgb(100, 0, 0);
-    /* Другие стили для div */
+.background-all {
+    background: linear-gradient(70deg, #010612, #00040f);
 }
 
-.background-all {
-    background: linear-gradient(70deg, #06011a, #01031a);
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    align-items: center;
+    padding: 40px 0;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header nav {
+    display: flex; /* Расположение ссылок в строку */
+    gap: 10px; /* Расстояние между ссылками */
+}
+
+header a {
+    display: inline-block; /* Отображение ссылок как блочных элементов внутри строки */
+    font-weight: medium;
+    padding: 0 4px;
+    transition: color 150ms;
+    color: #333; /* Изначальный цвет текста */
+    text-decoration: none; /* Убрать подчеркивание */
+    font-size: 19;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+
+}
+
+
+header a.active {
+    color: #fff; /* Цвет текста при активном состоянии */
+}
+
+header a:hover {
+    color: #ccc; /* Цвет текста при наведении курсора */
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    margin-top: -10px;
+
+}
+
+.logo-all {
+    margin-left: 120px; /* Отступ слева для логотипа */
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 20px; /* Расстояние между логотипом и названием */
+}
+
+.navigation-all {
+    margin-right: 350px; /* Отступ справа для навигации */
+}
+
+.a_personal-all {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-feature-settings: normal;
+    color-scheme: dark;
+    accent-color: #6563ee;
+    line-height: inherit;
+    --tw-bg-opacity: 1;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #454550;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    text-decoration: inherit;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.divider-all {
+    height: 0.1px; /* Высота линии */
+    width: 90%; /* Ширина линии */
+    background-color: #ccc; /* Цвет линии */
+    margin: 110px 0; /* Отступы сверху и снизу */
+    margin-left: 5%;
 }
