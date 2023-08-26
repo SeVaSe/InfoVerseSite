@@ -1,10 +1,31 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Оплата</title>
+    <title>Магазин InfoVerse</title>
+    <link type="text/css" href="{% static 'ifisite/css/styles.css' %}" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'ifisite/css/style_k.css' %}" rel="stylesheet"/>
 </head>
-<body>
-<h1>ДЕНЯК ДАЙ</h1>
+<body class="background-all">
+    <header>
+        <link rel="icon" href="{% static 'ifisite/images/logo.png' %}" type="image/png">
+        <div class="logo-all">
+            <h1>InfoVerse</h1>
+        </div>
+        <nav class="navigation-all">
+              <a href="{% url 'main_p' %}">Главная</a>
+              <a href="{% url 'commands_p' %}">Наш продукт</a>
+              <a href="{% url 'payment_p' %}" class="a_personal-all">Магазин</a>
+              <a href="{% url 'feedback_p' %}">Обратная связь</a>
+              <a href="{% url 'feedback_p' %}">FAQ</a>
+        </nav>
+
+
+    </header>
+
+    <div class="divider-all"></div>
+
+
+
 </body>
 </html>
