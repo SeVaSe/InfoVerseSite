@@ -1,10 +1,34 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Команды</title>
+    <link type="text/css" href="{% static 'ifisite/css/styles.css' %}" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'ifisite/css/style_k.css' %}" rel="stylesheet"/>
 </head>
-<body>
-<h1>МОИ КОМАНДЫ</h1>
+<body class="background-all">
+    <header>
+        <link rel="icon" href="{% static 'ifisite/images/logo.png' %}" type="image/png">
+        <div class="logo-all">
+            <img src="{% static 'ifisite/images/logo.png' %}" width="20%" />
+            <h1>InfoVerse</h1>
+        </div>
+        <nav class="navigation-all">
+              <a href="{% url 'main_p' %}">Главная</a>
+              <a href="{% url 'commands_p' %}" class="a_personal-all">Наш продукт</a>
+              <a href="{% url 'payment_p' %}">Магазин</a>
+              <a href="{% url 'feedback_p' %}">Обратная связь</a>
+              <a href="{% url 'feedback_p' %}">FAQ</a>
+        </nav>
+    </header>
+    <div class="divider-all"></div>
+<!--СМОТРИ, то что выше не трогай, эта моя часть работы, дело в том, что шапка должна быть во всех файлах
+    поэтому мне пришлось влезть своей работой не много в твой файл.
+    Шапка сайта находится в <header> </>header> - вот именно это не трогай.
+    Так же к шапке относится и линия, которую ты увидишь, эта линия рисуется тут - <div class="divider-all"></div>
+    Все что перечислил, находится выше. Я задокументировал это и ввел в курс работы.-->
+
+
+
 </body>
 </html>
