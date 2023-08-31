@@ -1,5 +1,5 @@
 .background-all {
-    background: linear-gradient(70deg, #010612, #00040f);
+    background: #010612;   /* linear-gradient(70deg, #010612, #00040f);*/
 }
 
 body, html {
@@ -12,11 +12,12 @@ header {
     justify-content: space-between; /* Равномерное распределение между элементами */
     align-items: center;
     padding: 40px 0;
-    background: transparent;
+    background: #010612;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 header nav {
