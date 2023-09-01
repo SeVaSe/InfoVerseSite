@@ -147,4 +147,58 @@ header h1 {
 
 .topheader-all {
     margin-top: 200;
+
+
+
 }
+
+
+.mtrans-k {
+    margin-left: 130px;
+    margin-top: 210px;
+
+
+}
+
+.main-k {
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    color: #fff;
+    font-size: 40;
+
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mprop-k {
+    margin-left: 10;
+    margin-top: 2px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    color: #adadad;
+    font-size: 16;
+}
+
+.rI {
+    color: #86b0f0;
+    font-size:60px;
+}
+
+.bV {
+    color: #acc3e6;
+
+}
+
+.rounded-square {
+    margin-left: auto; /* Прижимаем к правому краю */
+    margin-right: 30;
+    margin-top: 0px;
+    width: 400px; /* Ширина квадрата */
+    height: 480px; /* Высота квадрата */
+    border-radius: 70px; /* Закругление углов (указывается в пикселях) */
+    background-color: #040f17; /* Цвет заливки */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Эффект светящейся границы */
+}
+
+
+
+
