@@ -140,6 +140,11 @@ header h1 {
     height: 0.1px; /* Высота линии */
     width: 90%; /* Ширина линии */
     background-color: #ccc; /* Цвет линии */
-    margin: 110px 0; /* Отступы сверху и снизу */
-    margin-left: 5%;
+    margin-top: 90px; /* Отступ сверху */
+    margin-left: 5%; /* Отступ слева (если необходимо) */
+    position:fixed;
+}
+
+.topheader-all {
+    margin-top: 200;
 }
